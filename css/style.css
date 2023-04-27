@@ -68,7 +68,7 @@ li{
     color: #a3a3a3;
 }
 
-.rec-played, .for-you{
+.rec-played, .for-you, .popular{
     margin: 1rem;
 }
 
@@ -80,6 +80,10 @@ li{
 
 .album img{
     width: 100%;
+}
+
+.popular .album img{
+    border-radius: 50%;
 }
 
 .contents h2{
