@@ -173,6 +173,10 @@ nav, .buttons{
     position: relative;
 }
 
+.cont-menu a{
+    font-weight: 750;
+}
+
 li{
     list-style: none;
     color: #a3a3a3;
@@ -190,6 +194,19 @@ li{
 .rec-played, .for-you, .popular{
     margin: 1rem;
 }
+
+.album{
+    position: relative;
+}
+
+.rec-played i, .for-you i, .popular i{ 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1em;
+    font-size: 5rem;
+    display: none;
+    }
 
 .albums{
     flex-wrap: wrap;
@@ -294,6 +311,22 @@ align-items: center;
     width: 150px;
     margin: 0 1rem;
 }
+
+/* ---------HOVER EFFECTS--------- */
+
+div.album:hover img{
+    filter: opacity(30%);
+}
+
+div.album:hover i{
+    display: inline;
+}
+
+li:hover .grey{
+    color: white;
+}
+
+/* ---------MEDIA SCREEN--------- */
 
 @media screen and (max-width: 992px) {
     
