@@ -42,7 +42,8 @@ a{
 nav{
     background-color: black;
     width: 250px;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 100px);
+    overflow: hidden;
 }
 
 nav i{
@@ -95,9 +96,7 @@ nav, .buttons{
 }
 
 .account{
-    position: absolute;
     width: 100%;
-    bottom: 0;
 }
 
 .account img{
@@ -119,7 +118,7 @@ nav, .buttons{
 .contents{
     background-color: #141922;
     width: 90%;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 100px);
     overflow: auto;
 }
 
@@ -134,6 +133,11 @@ nav, .buttons{
     justify-content: center;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+.cont-menu ul{
+    text-align: center;
+    line-height: 2rem;
 }
 
 .border3{
@@ -187,6 +191,10 @@ li{
     margin: 1rem;
 }
 
+.albums{
+    flex-wrap: wrap;
+}
+
 .album{
     text-align: center;
     width: calc(100% / 6 - 1rem);
@@ -208,12 +216,13 @@ li{
 .contents h3{
     font-size: 0.8rem;
     color: #a3a3a3;
+    padding-bottom: 1rem;
 }
 
 footer{
     background-color: #282828;
     width: 100vw;
-    height: 10vh;
+    height: 100px;
     justify-content: space-between;
 }
 
@@ -240,7 +249,7 @@ footer{
 }
 
 .center-footer{
-    width: 25%;
+    width: 30%;
 }
 
 .play-pause i{
@@ -270,7 +279,6 @@ align-items: center;
 }
 
 .right-footer{
-    width: 13%;
     align-items: center;
 }
 
@@ -283,7 +291,123 @@ align-items: center;
     background-color: #595959;
     height: 4px;
     border-radius: 4px;
-    width: 70%;
+    width: 150px;
     margin: 0 1rem;
 }
 
+@media screen and (max-width: 992px) {
+    
+    .album {
+        width: calc(100% / 4 - 1rem);
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .album {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .fav{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.5rem;
+    }
+
+    .left-footer img{
+        height: 75%;
+    }
+
+    .center-footer{
+        margin: auto;
+    }
+
+    .play-pause{
+        margin: 0.2rem 0;
+    }
+
+    .play-pause i{
+        font-size: 15px;
+        margin: 0.2rem;
+    }
+
+    .play-pause i.fa-2xl{
+        font-size: 25px;
+    }
+
+    .right-footer .volume-bar {
+        width: 100px;
+    }
+
+    .right-footer i{
+        font-size: 10px;
+        margin-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav{
+        width: 50px;
+    }
+
+    .upper-logo .big-logo{
+        display: none;
+    }
+
+    .upper-logo .small-logo{
+        display: inline;
+    }
+
+    .upper-logo{
+        height: auto;
+    }
+
+    div.upper-logo img{
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .border{
+        display: none;
+    }
+
+    .buttons{
+        text-align: center;
+        padding: 0 0 0 10px
+    }
+
+    .playlist h1{
+        display: none;
+    }
+
+    .account{
+        text-align: center;
+        padding-left: 13px;
+    }
+
+    .account i{
+        padding-left: 0.2rem;
+    }
+
+    .account hr{
+        display: none;
+    }
+
+    footer{
+        min-width: 530px;
+    }
+
+    body{
+        min-width: 530px;
+    }
+}
