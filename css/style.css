@@ -3,4 +3,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    overflow: auto;
+}
+
+nav{
+    background-color: black;
+    width: 250px;
+    height: calc(100vh - 10vh);
+}
+
+div.upper-logo img{
+    width: 170px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-logo .small-logo{
+    display: none;
+}
+
+.upper-logo, .upper-button{
+    height: 75px;
+}
+
+.contents{
+    background-color: #141922;
+    width: 90vw;
+    height: calc(100vh - 10vh);
+}
+
+.contents .upper-button{
+    justify-content: end;
+    align-items: center;
+    background-color: #080b12;
+}
+
+.cont-menu{
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.cont-menu li{
+    padding: 1rem 0.5rem;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    color: #a3a3a3;
+}
+
+footer{
+    background-color: #282828;
+    width: 100vw;
+    height: 10vh;
 }
