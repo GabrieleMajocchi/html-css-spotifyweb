@@ -170,6 +170,14 @@ li{
     color: #a3a3a3;
 }
 
+.upper-button a{
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.8rem 2.5rem;
+    margin-right: 1rem;
+}
 
 .rec-played, .for-you, .popular{
     margin: 1rem;
