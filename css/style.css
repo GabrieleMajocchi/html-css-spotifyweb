@@ -11,6 +11,14 @@
     display: flex;
 }
 
+.mar-ver-1{
+    margin: 1rem 0;
+}
+
+.mar-ver-2{
+    margin: 2rem 0;
+}
+
 main{
     overflow: auto;
 }
@@ -60,6 +68,33 @@ div.upper-logo img{
 li{
     list-style: none;
     display: inline;
+    color: #a3a3a3;
+}
+
+.rec-played{
+    margin: 1rem;
+}
+
+.albums{
+    justify-content: space-between;
+}
+
+.album{
+    text-align: center;
+    width: calc(100% / 6 - 1rem);
+    margin-right: 1rem;
+}
+
+.album img{
+    width: 100%;
+}
+
+.album h2{
+    font-size: 1.2rem;
+}
+
+.album h3{
+    font-size: 0.8rem;
     color: #a3a3a3;
 }
 
