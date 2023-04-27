@@ -19,10 +19,30 @@
     margin: 2rem 0;
 }
 
+.white{
+    color: white;
+}
+
+.grey{
+    color: #a3a3a3;
+}
+
+.inline{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
 nav{
     background-color: black;
     width: 250px;
     height: calc(100vh - 10vh);
+}
+
+nav i{
+    padding-right: 0.5rem;
 }
 
 div.upper-logo img{
@@ -36,13 +56,65 @@ div.upper-logo img{
     display: none;
 }
 
+.buttons, .playlist, .account{
+    padding: 0 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+nav, .buttons{
+    position: relative;
+}
+
+.border{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: greenyellow;
+    width: 3px;
+    height: 32px;
+}
+
+.playlist h1{
+    font-size: 0.9rem;
+    padding-top: 1rem;
+}
+
+.playlist ul li .fa-square-plus{
+    font-size: 45px;
+    vertical-align: middle;
+}
+
 .upper-logo, .upper-button{
     height: 75px;
 }
 
+.account{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.account img{
+    border-radius: 50%;
+    aspect-ratio: 1;
+    height: 1.5rem;
+    background-color: gray;
+    margin: 1rem 0.3rem 0 0;
+}
+
+.account a:last-child{
+    vertical-align: text-bottom;
+}
+
+.account i{
+    margin-left: 0.2rem;
+}
+
 .contents{
     background-color: #141922;
-    width: 90vw;
+    width: 90%;
     height: calc(100vh - 10vh);
     overflow: auto;
 }
@@ -60,13 +132,14 @@ div.upper-logo img{
 
 .cont-menu li{
     padding: 1rem 0.5rem;
+    display: inline;
 }
 
 li{
     list-style: none;
-    display: inline;
     color: #a3a3a3;
 }
+
 
 .rec-played, .for-you, .popular{
     margin: 1rem;
