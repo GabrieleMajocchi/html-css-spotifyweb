@@ -19,6 +19,10 @@
     margin: 2rem 0;
 }
 
+.pad05{
+    padding: 0.8rem;
+}
+
 .white{
     color: white;
 }
@@ -172,7 +176,7 @@ li{
 
 .upper-button a{
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     border: 1px solid white;
     border-radius: 25px;
     padding: 0.8rem 2.5rem;
@@ -210,4 +214,76 @@ footer{
     background-color: #282828;
     width: 100vw;
     height: 10vh;
+    justify-content: space-between;
 }
+
+.left-footer{
+    height: 50%;
+    margin: 1.5rem 0.5rem;
+    align-items: center;
+}
+
+.left-footer img{
+    height: 100%;
+}
+
+.song-info{
+    padding: 0.6rem;
+}
+
+.fav{
+    padding-left: 2rem;
+}
+
+.fav i{
+    padding: 0.3rem;
+}
+
+.center-footer{
+    width: 25%;
+}
+
+.play-pause i{
+    margin: 0.5rem;
+}
+
+.play-pause{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.media-bar{
+align-items: center;
+}
+
+.media-bar span{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.media-bar .music-bar{
+    background-color: #595959;
+    height: 4px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0 1rem;
+}
+
+.right-footer{
+    width: 13%;
+    align-items: center;
+}
+
+.right-footer i{
+    margin-left: 1.5rem;
+    font-size: 15px;
+}
+
+.right-footer .volume-bar{
+    background-color: #595959;
+    height: 4px;
+    border-radius: 4px;
+    width: 70%;
+    margin: 0 1rem;
+}
+
