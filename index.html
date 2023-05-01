@@ -11,44 +11,47 @@
 <body>
     
     <main class="flex">
-        <nav>
+        <nav class="flex">
 
-            <div class="upper-logo flex">
-                <img src="img/logo.svg" alt="Logo di Spotify" class="big-logo">
-                <img src="img/logo-small.svg" alt="Logo di Spotify" class="small-logo">
+            <div class="top-nav">
+                <div class="upper-logo flex">
+                    <img src="img/logo.svg" alt="Logo di Spotify" class="big-logo">
+                    <img src="img/logo-small.svg" alt="Logo di Spotify" class="small-logo">
+                </div>
+
+                <div class="buttons">
+                    <div class="border"></div>
+                    <ul>
+                        <li class="white"><i class="fa-solid fa-house fa-xl"></i><a href="#"> Home</a></li>
+                        <li><i class="fa-solid fa-magnifying-glass fa-xl grey"></i><a href="#" class="grey"> Cerca</a></li>
+                        <li><i class="fa-solid fa-lines-leaning fa-xl grey"></i><a href="#" class="grey"> La tua libreria</a></li>
+                    </ul>
+                </div>
+                
+                <div class="playlist">
+                    <h1>PLAYLIST</h1>
+                    <ul>
+                        <li><a href="#" class="grey"><i class="fa-solid fa-square-plus grey inline"></i> Crea Playlist</a></li>
+                        <li><a href="#" class="grey">Nome Playlist</a></li>
+                        <li><a href="#" class="grey">Nome Playlist</a></li>
+                        <li><a href="#" class="grey">Nome Playlist</a></li>
+                        <li><a href="#" class="grey">Nome Playlist</a></li>
+                        <li><a href="#" class="grey">Nome Playlist</a></li>
+                        <li><a href="#" class="grey">Nome Playlist</a></li>
+                        <li><a href="#" class="grey">Nome Playlist</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="buttons">
-                <div class="border"></div>
-                <ul>
-                    <li class="white"><i class="fa-solid fa-house fa-xl"></i><a href="#"> Home</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass fa-xl grey"></i><a href="#" class="grey"> Cerca</a></li>
-                    <li><i class="fa-solid fa-lines-leaning fa-xl grey"></i><a href="#" class="grey"> La tua libreria</a></li>
-                </ul>
+            <div class="bottom-nav">
+                <div class="account">
+                    <i class="fa-regular fa-circle-down grey fa-xs"></i>
+                    <a href="" class="grey">Installa app</a>
+                    <hr class="grey">
+                    <img src="img/profile.svg" alt="">
+                    <a href="">John Doe</a>
+                </div>
             </div>
-            
-            <div class="playlist">
-                <h1>PLAYLIST</h1>
-                <ul>
-                    <li><a href="#" class="grey"><i class="fa-solid fa-square-plus grey inline"></i> Crea Playlist</a></li>
-                    <li><a href="#" class="grey">Nome Playlist</a></li>
-                    <li><a href="#" class="grey">Nome Playlist</a></li>
-                    <li><a href="#" class="grey">Nome Playlist</a></li>
-                    <li><a href="#" class="grey">Nome Playlist</a></li>
-                    <li><a href="#" class="grey">Nome Playlist</a></li>
-                    <li><a href="#" class="grey">Nome Playlist</a></li>
-                    <li><a href="#" class="grey">Nome Playlist</a></li>
-                </ul>
-            </div>
-
-            <div class="account">
-                <i class="fa-regular fa-circle-down grey fa-xs"></i>
-                <a href="" class="grey">Installa app</a>
-                <hr class="grey">
-                <img src="img/profile.svg" alt="">
-                <a href="">John Doe</a>
-            </div>
-
         </nav>
 
         <section class="contents">
@@ -71,38 +74,50 @@
                 <h1 class="mar-ver-2">Recently played</h1>
                 <div class="albums flex">
                     <div class="album">
-                        <img src="img/metal_lifting.jpg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Heavy Metal</h2>
                         <h3>Subtitle</h3>
                     </div>
                     <div class="album">
-                        <img src="img/stranger.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/stranger.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
                         <h3>Kyle Dixon & Michael Stein</h3>
                     </div>
                     <div class="album">
-                        <img src="img/aquietplace.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/aquietplace.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">A quiet place</h2>
                         <h3>Subtitle</h3>
                     </div>
                     <div class="album">
-                        <img src="img/split.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/split.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Split</h2>
                         <h3>Subtitle</h3>
                     </div>
                     <div class="album">
-                        <img src="img/cure.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/cure.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">A cure for wellness</h2>
                         <h3>Subtitle</h3>
                     </div>
                     <div class="album">
-                        <img src="img/sinister.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/sinister.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Sinister</h2>
                         <h3>Subtitle</h3>
                     </div>
@@ -116,13 +131,17 @@
                 </div>
                 <div class="albums flex">
                     <div class="album">
-                        <img src="img/radar.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/radar.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Release Radar</h2>
                     </div>
                     <div class="album">
-                        <img src="img/mixdaily.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/mixdaily.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Daily Mix 1</h2>
                     </div>
                 </div>
@@ -135,13 +154,17 @@
                 </div>
                 <div class="albums flex">
                     <div class="album">
-                        <img src="img/youg.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/youg.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Lana del Rey</h2>
                     </div>
                     <div class="album">
-                        <img src="img/einaudi.jpeg" alt="">
-                        <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        <div class="album-pic">
+                            <img src="img/einaudi.jpeg" alt="">
+                            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+                        </div>
                         <h2 class="mar-ver-1">Ludovico Einaudi</h2>
                     </div>
                 </div>
@@ -156,38 +179,48 @@
         <div class="left-footer flex">
             <img src="img/sinister.jpeg" alt="">
             <div class="song-info">
-                <h5>Sinister</h5>
-                <h6 class="grey">Brano Nome</h6>
+                <h5><a href="">Sinister</a></h5>
+                <h6 class="grey"><a href="" class="grey">Brano Nome</a></h6>
             </div>
             <div class="fav">
-                <i class="fa-regular fa-heart grey"></i>
-                <i class="fa-regular fa-folder grey"></i>
+                <a href=""><i class="fa-regular fa-heart grey"></i></a>
+                <a href=""><i class="fa-regular fa-folder grey"></i></a>
             </div>
         </div>
 
         <div class="center-footer">
             
             <div class="play-pause">
-                <i class="fa-solid fa-shuffle white"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play fa-2xl pad05"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-rotate-right"></i>
+                <a href=""><i class="fa-solid fa-shuffle white"></i></a>
+                <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                <div class="play-but">
+                    <a href=""><i class="fa-regular fa-circle-play fa-2xl pad05"></i></a>
+                </div>
+                <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                <a href=""><i class="fa-solid fa-rotate-right"></i></a>
             </div>
 
             <div class="media-bar flex">
                 <span>0:25</span>
-                <div class="music-bar"></div>
+                <div class="music-bar">
+                    <div class="color-bar">
+                        <a href=""></a>
+                    </div>
+                </div>
                 <span>4:35</span>
             </div>
 
         </div>
 
         <div class="right-footer flex">
-            <i class="fa-solid fa-list"></i>
-            <i class="fa-solid fa-display"></i>
-            <i class="fa-solid fa-volume-high"></i>
-            <div class="volume-bar"></div>
+            <a href=""><i class="fa-solid fa-list"></i></a>
+            <a href=""><i class="fa-solid fa-display"></i></a>
+            <a href=""><i class="fa-solid fa-volume-high"></i></a>
+            <div class="volume-bar">
+                <div class="color-bar">
+                    <a href=""></a>
+                </div>
+            </div>
         </div>
 
     </footer>

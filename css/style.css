@@ -44,6 +44,8 @@ nav{
     width: 250px;
     height: calc(100vh - 100px);
     overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav i{
@@ -195,17 +197,17 @@ li{
     margin: 1rem;
 }
 
-.album{
+.album-pic{
     position: relative;
 }
 
 .rec-played i, .for-you i, .popular i{ 
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1em;
     font-size: 5rem;
     display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     }
 
 .albums{
@@ -269,6 +271,20 @@ footer{
     width: 30%;
 }
 
+.play-but{
+    display: inline-block;
+    width: 35px;
+    height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.play-but a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .play-pause i{
     margin: 0.5rem;
 }
@@ -293,6 +309,29 @@ align-items: center;
     border-radius: 4px;
     width: 100%;
     margin: 0 1rem;
+    position: relative;
+}
+
+.music-bar .color-bar{
+    position: absolute;
+    height: 4px;
+    border-radius: 4px;
+    width: 25%;
+    top: 0;
+    left: 0;
+    background-color: #c1c1c1;
+}
+
+.music-bar a{
+    display: none;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .right-footer{
@@ -305,6 +344,7 @@ align-items: center;
 }
 
 .right-footer .volume-bar{
+    position: relative;
     background-color: #595959;
     height: 4px;
     border-radius: 4px;
@@ -312,10 +352,41 @@ align-items: center;
     margin: 0 1rem;
 }
 
+.volume-bar .color-bar{
+    position: absolute;
+    height: 4px;
+    border-radius: 4px;
+    width: 20%;
+    top: 0;
+    left: 0;
+    background-color: #c1c1c1;
+}
+
+.volume-bar a{
+    display: none;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
 /* ---------HOVER EFFECTS--------- */
+
+.upper-button a:hover{
+    padding: 0.9rem 2.6rem;
+    font-size: 0.95rem;
+}
 
 div.album:hover img{
     filter: opacity(30%);
+}
+
+div.album:hover{
+    cursor: pointer;
 }
 
 div.album:hover i{
@@ -323,6 +394,39 @@ div.album:hover i{
 }
 
 li:hover .grey{
+    color: white;
+}
+
+.account a:hover{
+    color: white;
+}
+
+.play-pause i.fa-circle-play:hover{
+    font-size: 2.5rem;
+}
+
+.media-bar:hover .color-bar{
+    background-color: greenyellow;
+}
+
+.media-bar:hover a{
+    display: block;
+}
+
+.volume-bar:hover .color-bar{
+    background-color: greenyellow;
+}
+
+.volume-bar:hover a{
+    display: block;
+}
+
+.song-info h6:hover a{
+    color: white;
+    text-decoration: underline;
+}
+
+.fav i:hover{
     color: white;
 }
 
